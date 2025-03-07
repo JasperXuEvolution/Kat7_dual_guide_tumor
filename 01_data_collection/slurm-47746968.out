@@ -1,0 +1,11 @@
+/var/spool/slurm/slurmd/job47746968/slurm_script: line 18: /var/spool/slurm/slurmd/job47746968/../config.sh: No such file or directory
+mkdir: cannot create directory ‘/01_data_collection’: Permission denied
+mkdir: cannot create directory ‘/01_data_collection’: Permission denied
+mkdir: cannot create directory ‘/01_data_collection’: Permission denied
+/var/spool/slurm/slurmd/job47746968/slurm_script: line 109: /01_data_collection/data/NGS_address_test: No such file or directory
+python3: can't open file '/01_data_collection/main_code/dual_guide_aggregate.py': [Errno 2] No such file or directory
+JobID           JobName              Submit               Start                 End      State  Partition                        ReqTRES    CPUTime     MaxRSS                       NodeList 
+------------ ---------- ------------------- ------------------- ------------------- ---------- ---------- ------------------------------ ---------- ---------- ------------------------------ 
+47746968     UltraSeq_+ 2025-03-06T16:09:12 2025-03-06T16:09:13             Unknown    RUNNING      batch billing=1,cpu=1,mem=51200M,no+   00:00:03                      dper7425-srcf-d15-31 
+47746968.ba+      batch 2025-03-06T16:09:13 2025-03-06T16:09:13             Unknown    RUNNING                                             00:00:03                      dper7425-srcf-d15-31 
+47746968.ex+     extern 2025-03-06T16:09:13 2025-03-06T16:09:13             Unknown    RUNNING                                             00:00:03                      dper7425-srcf-d15-31 

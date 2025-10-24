@@ -2,3 +2,6 @@
 01_data_collection/data/Bartender/
 01_data_collection/data/Processed_data/
 01_data_collection/log/
+03_bootstrapping_combine_inert/
+03_bootstrapping_no_TS/
+03_bootstrapping/data/

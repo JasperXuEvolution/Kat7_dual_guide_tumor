@@ -1,0 +1,22 @@
+Using grouping parameters: ['gRNA_combination', 'gRNA_combination_unordered', 'gene_combination', 'gene_combination_unordered']
+Processing data from /labs/mwinslow/Haiqing/UltraSeq_Projects/Kat7_dual_guide_tumor/02_data_cleaning_and_QC/data/Kat7_DualGuide_final_df.parquet...
+Normal mode is implemented.
+Focal genotype cell cutoff: 300
+Reference genotype cell cutoff: 100
+Focal genotype: ['KTHC']
+Reference genotype: ['KT']
+Calculating tumor size quantiles: ['50', '60', '70', '80', '90', '95', '96', '97', '98', '99']
+Performing 1000 bootstrapping repeats
+No sgRNA is excluded from the analysis
+No sample is excluded from the analysis
+There are 18 experiment mice
+There are 5 control mice
+Adaptive method is used for the analysis
+Minimal cell cutoff: 300
+Bootstrapping steps are finished
+All steps finished
+JobID           JobName              Submit               Start                 End      State  Partition                        ReqTRES    CPUTime     MaxRSS                       NodeList 
+------------ ---------- ------------------- ------------------- ------------------- ---------- ---------- ------------------------------ ---------- ---------- ------------------------------ 
+47942370     01-Bootst+ 2025-04-18T15:54:49 2025-04-18T15:55:04             Unknown    RUNNING      batch billing=1,cpu=1,mem=102400M,n+   00:20:42                cfx22885s-srcf-d11-02-west 
+47942370.ba+      batch 2025-04-18T15:55:04 2025-04-18T15:55:04             Unknown    RUNNING                                             00:20:42                cfx22885s-srcf-d11-02-west 
+47942370.ex+     extern 2025-04-18T15:55:04 2025-04-18T15:55:04             Unknown    RUNNING                                             00:20:42                cfx22885s-srcf-d11-02-west 

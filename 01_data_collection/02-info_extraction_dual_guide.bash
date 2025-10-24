@@ -10,6 +10,8 @@
 #SBATCH --time=2-00:00:00
 #SBATCH --account=mwinslow
 #SBATCH --partition=batch
+#SBATCH --output=./log/%x_%j.out              # Standard output log file
+#SBATCH --error=./log/%x_%j.err               # Standard error log file
 
 # Source the configuration file 
 source ../config.sh
@@ -22,7 +24,7 @@ conda activate UltraSeq
 # --- Directories and Input Files ---
 working_dir="$PROJECT_DIR/01_data_collection"
 input_data_info_address="$working_dir/data/NGS_address"
-guide_ref="$working_dir/data/guide_reference.csv"
+guide_ref="$working_dir/data/guide_reference-Kat7_dual_guide.csv"
 
 # Explanation for input files:
 #   input_data_info_address:
@@ -95,7 +97,7 @@ while read -r line; do
    # For each file listed in the Bartender_input_address file, run the clustering command
    while read -r line2; do 
       new_name=${line2/.bartender/}
-      bartender_single_com -z -1 -d 1 -l 3 -f "$line2" -o "$new_name"
+      bartender_single_com -z -1 -d 1 -l 5 -f "$line2" -o "$new_name"
    done < "$sample_bartender_dir/Bartender_input_address"
 
    # --- Step 4: Create Processed Data Folder for the Sample ---

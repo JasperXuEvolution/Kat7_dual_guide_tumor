@@ -90,7 +90,7 @@ while read -r line; do
    mkdir -p "$sample_bartender_dir/Clonal_barcode"
 
    # Run dual_guide_parsing.py using the trimmed files
-   python3 "$working_dir/main_code/dual_guide_parsing.py" --a1 "$trimmed_r1" --a2 "$trimmed_r2" \
+   python3 "$working_dir/main_code/dual_guide_parsing_for_JK.py" --a1 "$trimmed_r1" --a2 "$trimmed_r2" \
        --b "$guide_ref" --o "$sample_bartender_dir"
 
    # --- Step 3: Run Bartender Clustering ---
